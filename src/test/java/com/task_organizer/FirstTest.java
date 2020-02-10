@@ -2,6 +2,7 @@ package com.task_organizer;
 
 import com.task_organizer.domain.Task;
 import com.task_organizer.repository.TaskRepository;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,6 @@ public class FirstTest {
 
         Task foundTask = taskRepository.findByName("test");
 
-        System.out.println(foundTask);
+        Assert.assertEquals(taskToSave.getId(), foundTask.getId());
     }
 }
