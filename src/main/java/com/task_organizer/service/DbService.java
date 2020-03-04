@@ -1,7 +1,6 @@
 package com.task_organizer.service;
 
 import com.task_organizer.domain.Task;
-import com.task_organizer.domain.TaskDto;
 import com.task_organizer.repository.TaskRepository;
 import org.springframework.stereotype.Service;
 
